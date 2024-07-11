@@ -1,0 +1,441 @@
+body {
+    padding-bottom: 500px;
+}
+
+h3 {
+    color: green;
+}
+
+p {
+    color: rgb(24, 22, 22);
+}
+
+/* Classes */
+.paragraph {
+    background-color: black;
+    color: mediumseagreen;
+    padding: 10px;
+}
+
+/* Id's*/
+#exclusive-title {
+    background-color: darkcyan;
+    color: maroon;
+}
+
+/* Ordem dos seletores */
+h2 {
+    border-bottom: 2px solid slategray;
+}
+
+.titulos {
+    border-bottom: 3px solid steelblue;
+}
+
+#algum-titulo {
+    border-bottom: 4px solid slateblue;
+}
+
+/* Nome de cor */
+.color-name {
+    color: indigo;
+    font-weight: bolder;
+}
+
+/* Cor Hexadecimais */
+.color-hexadecimal {
+    color: #44857c;
+}
+
+/* Cor Abreviation */
+.abreviation{
+    color: #149;
+}
+
+/* RGB */
+.rgb {
+    color: rgb(47, 79, 79);
+}
+
+
+/* RGBA */
+.rgba {
+    color: rgba(153, 50, 204, 0.712);
+}
+
+/* HSL */
+.hsl {
+    color: hsl(15, 72%, 70%);
+}
+
+/* BackGround-Color*/
+.fundo {
+    background-color: #aaa;
+}
+
+/* Opacidade */
+.opacidade {
+    background-color: green;
+    opacity: 0.2;
+}
+
+/* Opacidade RGBA */
+.opacidade-rgba {
+    background-color: rgba(0, 128, 0, 0.479);
+
+}
+
+/* BG Image */
+.bg-image{
+    padding: 20px;
+    color: white;
+    background-image: url(../img/nature.jpg);
+}
+
+/* Centralizando BG-Img */
+.sem-centralizar,
+.centralizada {
+    height: 300px;
+    width: 300px;
+    background-image: url(../img/bridge.jpg);
+}
+
+.centralizada {
+    background-position: center;
+    background-size: cover;
+}
+
+.largura-altura {
+    height: 300px;
+    width: 300px;
+    background-color: lightslategrey;
+}
+
+.padding-on,
+.padding-off {
+    border: 1px solid white;
+    color: white;
+    background-color: #808080;
+}
+
+.padding-on {
+    padding: 10px;
+}
+
+.padding-individual {
+    background-color: #222;
+    color: white;
+    padding-top: 10px;
+    padding-left: 20;
+    padding-right: 30px;
+    padding-bottom: 40px;
+}
+
+.shorthand-padding {
+    color: white;
+    background-color: #333;
+    padding: 6px 12px 18px 24px;
+}
+
+.without-border-box {
+    background-color: #444;
+    color: white;
+    width: 400px;
+    padding: 50px;
+}
+.border-box {
+    background-color: #555;
+    color: white;
+    width: 400px;
+    padding: 50px;
+    box-sizing: border-box;
+}
+.borda{
+    padding: 10px;
+    border: 5px solid red;
+}
+.border-left {
+    border-left: 3px solid darkmagenta;
+    padding: 5px;
+    background-color: #666;
+    color: white;
+}
+.border-bottom {
+    border-bottom: 3px solid darkmagenta;
+    background-color: #666;
+    color: white;
+}
+.redondo {
+    width: 100px;
+    height: 100px;
+    background-color: royalblue;
+    border-radius: 50%;
+}
+
+.margin {
+    margin: 10px;
+    background-color: #808080;
+}
+
+.margin-top {
+    margin-top: 50px;
+    background-color: #808080;
+    padding: 10px;
+}
+
+.margin-short {
+    margin: 10px 20px 50px 25px;
+    background-color: #808080;
+}
+
+.box-model {
+    margin: 20px;
+    padding: 15px;
+    border: 3px solid saddlebrown;
+    border-radius: 7px;
+    width: 200px;
+    height: 300px;
+}
+
+/* Desafio */
+#div-desafio {
+    margin: 20px;
+    padding: 15px 25px;
+    border: 3px solid saddlebrown;
+    border-radius: 7px;
+    width: 200px;
+    height: 100px;
+    background-color: rgb(11, 82, 204);
+    outline: 5px solid steelblue;
+}
+.h2-desafio {
+    text-align: center;
+    padding: 10px;
+    border-radius: 7px;
+    background-color: #44857c;
+}
+
+/* Text align */
+.text-aligned {
+    text-align: right;
+}
+
+.container-center {
+    text-align: center;
+    width: 300px;
+    border: 1px solid red;
+}
+
+/* Text decoration */
+.underline {
+    text-decoration: underline;
+}
+
+.line-trough {
+    text-decoration: line-through;
+}
+
+.remove-underline {
+    text-decoration: none;
+    color: red;
+}
+
+/* text transform */
+.upper {
+    text-transform: uppercase;
+}
+
+.lower {
+    text-transform: lowercase;
+}
+
+/* letter spacing */
+.spacing {
+    letter-spacing: 5px;
+}
+
+/* Fontes */
+.serif {
+    font-family: Georgia;
+}
+
+.sans-serif {
+    font-family: Helvetica;
+}
+
+.monospace {
+    font-style: "Courier New";
+}
+
+.cursive {
+    font-family: cursive;
+}
+
+.fantasy {
+    font-family: fantasy;
+}
+
+/* Text style */
+.italic {
+    font-style: italic;
+}
+
+.oblique {
+    font-style: oblique;
+}
+
+/* font weight */
+.thin,
+.bold,
+.bolder {
+    font-family: Helvetica;
+}
+
+.thin {
+    font-weight: 100;
+}
+
+.bold {
+    font-weight: 600;
+}
+
+.bolder {
+    font-weight: 900;
+}
+
+/* Font size */
+.small {
+    font-size: 6px;
+}
+
+.big {
+    font-size: 78px;
+}
+
+/* Display */
+.inline-box {
+    width: 50px;
+    height: 50px;
+    background-color: #4f8;
+    margin: 10px;
+    display: inline-block;
+}
+
+.block {
+    background-color: #333;
+    display: block;
+    margin: 10px;
+}
+
+.invisible {
+    display: none;
+}
+
+/* static */
+.static {
+    position: static;
+    background-color: #391;
+    color: #fff;
+    width: 100px;
+    height: 100px;
+}
+
+/* Relative */
+.relative {
+    position: relative;
+    background-color: #224;
+    color: #fff;
+    width: 100px;
+    height: 100px;
+    top: 100px;
+    left: 40px;
+}
+
+/* Absolute */
+.absolute {
+    position: absolute;
+    background-color: #964;
+    color: #fff;
+    width: 100px;
+    height: 100px;
+    top: 2px;
+    right: 2px;
+}
+
+/* Absolute e relative */
+.relative-container {
+    width: 300px;
+    height: 300px;
+    border: 1px solid red;
+    margin-top: 120px;
+    position: relative;
+}
+
+.absolute-1,
+.absolute-2 {
+    width: 50px;
+    height: 50px;
+    background-color: #422;
+    position: absolute;
+}
+
+.absolute-1 {
+    top: 10px;
+    left: 10px;
+}
+
+.absolute-2 {
+    bottom: 10px;
+    right: 10px;
+}
+
+/* Fixed */
+.fixed {
+    width: 100px;
+    height: 100px;
+    background-color: #851;
+    border: 1px solid blue;
+    position: fixed;
+    top: 50px;
+    right: 100px;
+}
+
+/* sticky */
+.sticky {
+    width: 100px;
+    height: 100px;
+    background-color: #994;
+    border: 1px solid green;
+    position: sticky;
+    top: 10px;
+}
+
+/* z index */
+.absolute-3,
+.absolute-4,
+.absolute-5 {
+    width: 50px;
+    height: 50px;
+    background-color: #123;
+    position: absolute;
+}
+
+.absolute-3 {
+    top: 0;
+    left: 0;
+    z-index: 2;
+}
+
+.absolute-4 {
+    top: 10px;
+    left: 10px;
+    background-color: #246;
+    z-index: 3;
+}
+
+.absolute-5 {
+    top: 40px;
+    left: 40px;
+    background-color: #453;
+    z-index: 1;
+}
