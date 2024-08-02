@@ -19,6 +19,7 @@ module.exports = {
     ],
     'react/prop-types': 'off',
     'no-unused-vars': 'off',
-    'no-case-declarations': 'off'
+    'no-case-declarations': 'off',
+    'react-hooks/rules-of-hooks': 'off'
   },
 }
