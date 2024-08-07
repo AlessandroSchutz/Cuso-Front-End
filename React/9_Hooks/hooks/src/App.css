@@ -41,6 +41,11 @@
   color: #888;
 }
 
-button {
-  margin: 10px;
+
+ul li {
+  list-style: none;
+}
+
+input[type='submit'] {
+  color: #000;
 }

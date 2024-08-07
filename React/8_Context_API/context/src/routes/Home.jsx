@@ -28,10 +28,10 @@ const Home = () => {
 
       {/* 6 - Alterando contexto complexo */}
 
-
       <div>
         <button onClick={() => setTitleColor("RED")}>Vermelho</button>
         <button onClick={() => setTitleColor("BLUE")}>Azul</button>
+        <button onClick={() => setTitleColor("DEFAULT")}>Padrão</button>
       </div>
     </div>
   )
