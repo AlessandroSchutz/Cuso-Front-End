@@ -6,6 +6,8 @@ import "./index.css";
 import Home from "./routes/Home.jsx";
 import Contact from "./routes/Contact.jsx";
 
+import HookUseContext from "./components/HookUseContext.jsx";
+
 import {
   createBrowserRouter,
   RouterProvider,
@@ -31,7 +33,9 @@ const router = createBrowserRouter([
 
 createRoot(document.getElementById("root")).render(
   <StrictMode>
-    <RouterProvider router={router} />
+    <HookUseContext>
+      <RouterProvider router={router} />
+    </HookUseContext>
   </StrictMode>,
 );
 

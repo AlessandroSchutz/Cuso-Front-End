@@ -36,6 +36,8 @@ export default [
       "react/prop-types": "off",
       "no-unused-vars": "off",
       "no-case-declarations": "off",
+      "react-hooks/exhaustive-deps": "off",
+      "react/display-name": "off",
     },
   },
 ];

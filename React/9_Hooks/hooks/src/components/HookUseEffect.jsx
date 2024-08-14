@@ -21,6 +21,15 @@ const HookUseEffect = () => {
   // 3 - Array de depnedências com valores
   const [anotherNumber, setAnotherNumber] = useState(0);
 
+  // 4 - cleanup do useEffect
+  // useEffect(() => {
+  //   const timer = setTimeout(() => {
+  //     console.log("Hello Worl!");
+  //     setAnotherNumber(anotherNumber + 1);
+  //   }, 2000);
+  //   return () => clearTimeout(timer);
+  // }, [anotherNumber]);
+
   useEffect(() => {
     if (anotherNumber > 0) {
       console.log("Sou executado apenas quando muda o anohterNumber!");
