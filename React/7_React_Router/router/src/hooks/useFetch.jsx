@@ -2,19 +2,19 @@ import { useState, useEffect } from "react";
 
 // 4 - Custom Hook
 export const useFetch = (url) => {
-  const [data, setData] = useState(null)
+  const [data, setData] = useState(null);
 
-  // 5 - Refatorando POST 
+  // 5 - Refatorando POST
 
-  const [config, setConfig] = useState(null)
-  const [method, setMethod] = useState(null)
-  const [callFetch, setCallFetch] = useState(null)
+  const [config, setConfig] = useState(null);
+  const [method, setMethod] = useState(null);
+  const [callFetch, setCallFetch] = useState(null);
 
   // 6 - Loading
   const [loading, setLoading] = useState(false);
 
   // 7 - Erros
-  const [error, setError] = useState(null)
+  const [error, setError] = useState(null);
 
   const httpConfig = (data, method) => {
     if (method === "POST") {
@@ -23,62 +23,58 @@ export const useFetch = (url) => {
         headers: {
           "Content-type": "application/json",
         },
-        body: JSON.stringify(data)
-      })
+        body: JSON.stringify(data),
+      });
 
-      setMethod(method)
+      setMethod(method);
     }
-  }
+  };
 
   useEffect(() => {
-    
     const fetchData = async () => {
       // 7 - Tratando Erros
       try {
         // 6 - Loading
-        setLoading(true)
+        setLoading(true);
 
-        const res = await fetch(url)
-        const json = await res.json()
+        const res = await fetch(url);
+        const json = await res.json();
 
-        setData(json)
-        } catch (error) { 
-          console.log(error.message)
-          setError("Houve algum erro ao carregar os dados!")
-        }
-        setLoading(false)
-    }
+        setData(json);
+      } catch (error) {
+        console.log(error.message);
+        setError("Houve algum erro ao carregar os dados!");
+      }
+      setLoading(false);
+    };
 
-    fetchData()
-  }, [url, callFetch])
+    fetchData();
+  }, [url, callFetch]);
 
   // 5 - Refatorando POST
 
   useEffect(() => {
-
     const httpRequest = async () => {
-      let json
+      let json;
 
       if (method === "POST") {
-
         // 6 - Loading
-        setLoading(true)
+        setLoading(true);
 
-        let fetchOptions = [url, config]
+        let fetchOptions = [url, config];
 
-        const res = await fetch(...fetchOptions)
+        const res = await fetch(...fetchOptions);
 
-        json = await res.json()
+        json = await res.json();
 
-        setLoading(false)
+        setLoading(false);
       }
 
-      setCallFetch(json)
+      setCallFetch(json);
+    };
 
-    }
+    httpRequest();
+  }, [config, method, url]);
 
-    httpRequest()
-  }, [config, method, url])
-
-  return { data, httpConfig, loading, error }
-}
+  return { data, httpConfig, loading, error };
+};
