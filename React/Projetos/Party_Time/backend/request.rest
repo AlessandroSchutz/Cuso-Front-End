@@ -1,0 +1,38 @@
+POST http://localhost:3000/api/services
+Content-Type: application/json
+
+{
+  "name": "Algum serviço 2",
+  "description": "Alguma descrição 2",
+  "price": 1790,
+  "image": "https://blog.ebaconline.com.br/blog/wp-content/uploads/2023/11/image6-1.png"
+
+}
+
+
+###
+
+GET http://localhost:3000/api/services
+
+
+###
+
+GET http://localhost:3000/api/services/66bfc9511dbe3c0e19752818
+
+
+###
+
+DELETE http://localhost:3000/api/services/66bfca8f04785964e0320137
+
+
+###
+PUT  http://localhost:3000/api/services/66bfd5ee65bac74644b5abcd
+Content-Type: application/json
+
+{
+  "name": "Atualização",
+  "description": "Alguma descrição 2",
+  "price": 1590,
+  "image": "https://blog.ebaconline.com.br/blog/wp-content/uploads/2023/11/image6-1.png"
+
+} 
