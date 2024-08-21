@@ -2,37 +2,123 @@ POST http://localhost:3000/api/services
 Content-Type: application/json
 
 {
-  "name": "Algum serviço 2",
-  "description": "Alguma descrição 2",
-  "price": 1790,
+  "name": "Alguma festaa",
+  "description": "Festa muito loca",
+  "price": 11920,
   "image": "https://blog.ebaconline.com.br/blog/wp-content/uploads/2023/11/image6-1.png"
 
 }
 
 
-###
 
+###
 GET http://localhost:3000/api/services
 
 
-###
 
+###
 GET http://localhost:3000/api/services/66bfc9511dbe3c0e19752818
 
 
-###
 
+###
 DELETE http://localhost:3000/api/services/66bfca8f04785964e0320137
 
 
+
 ###
-PUT  http://localhost:3000/api/services/66bfd5ee65bac74644b5abcd
+PUT  http://localhost:3000/api/services/66c61732eda61445588d8b8c
 Content-Type: application/json
 
 {
-  "name": "Atualização",
-  "description": "Alguma descrição 2",
-  "price": 1590,
+  "name": "Alguma festa",
+  "description": "Festa muito loca",
+  "price": 11920,
   "image": "https://blog.ebaconline.com.br/blog/wp-content/uploads/2023/11/image6-1.png"
 
 } 
+
+
+
+###
+POST http://localhost:3000/api/parties
+Content-Type: application/json
+
+{
+  "title": "Festa Primavera",
+  "author": "Matheus",
+  "description": "Festa de primavera",
+  "budget": 9000,
+  "image": "https://blog.ebaconline.com.br/blog/wp-content/uploads/2023/11/image6-1.png",
+  "services": [
+    {
+      "name": "Decoração",
+      "description": "Decoração da festa",
+      "price": 1100,
+      "image": "https://blog.ebaconline.com.br/blog/wp-content/uploads/2023/11/image6-1.png"
+    },
+    {
+      "name": "Bebidas",
+      "description": "Garçom, bebidas e afins",
+      "price": 5300,
+      "image": "https://blog.ebaconline.com.br/blog/wp-content/uploads/2023/11/image6-1.png"
+    },
+    {
+      "name": "Animador",
+      "description": "Animador de festa",
+      "price": 2200,
+      "image": "https://blog.ebaconline.com.br/blog/wp-content/uploads/2023/11/image6-1.png"
+    }
+
+  ]
+}
+
+
+
+###
+GET http://localhost:3000/api/parties
+
+
+
+###
+GET http://localhost:3000/api/parties/66c620c6bad8d85714b8e95c
+
+
+
+###
+DELETE http://localhost:3000/api/parties/66c620c6bad8d85714b8e95c
+
+
+
+###
+PUT http://localhost:3000/api/parties/66c6253105431414826ef25a
+Content-Type: application/json
+
+{
+  "title": "Festa Universitária",
+  "author": "Matheus",
+  "description": "Festa de universitários",
+  "budget": 15000,
+  "image": "https://www.acidadeon.com/araraquara/wp-content/uploads/sites/4/2023/08/279384013_4941987152580892_3872853461964150049_n.jpg",
+  "services": [
+    {
+      "name": "Decoração",
+      "description": "Decoração da festa",
+      "price": 5500,
+      "image": "https://www.direcional.com.br/wp-content/uploads/2022/11/decoracao-ano-novo-2.jpg?x72763"
+    },
+    {
+      "name": "Bebidas",
+      "description": "Garçom, bebidas e afins",
+      "price": 7300,
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSW_PprnGGJ5FQjcYTUQxLLJC2J4Hy_GGDIjg&s"
+    },
+    {
+      "name": "Animador",
+      "description": "Animador de festa",
+      "price": 2200,
+      "image": "https://img.freepik.com/fotos-gratis/homem-relaxando-em-casa_23-2150652866.jpg?size=626&ext=jpg&ga=GA1.1.401288578.1722459776&semt=ais_hybrid"
+    }
+
+  ]
+}
