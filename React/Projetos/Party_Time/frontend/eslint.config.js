@@ -38,6 +38,7 @@ export default [
       "no-case-declarations": "off",
       "react-hooks/exhaustive-deps": "off",
       "react/display-name": "off",
+      "react-hooks/rules-of-hooks": "off",
     },
   },
 ]

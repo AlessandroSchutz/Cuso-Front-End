@@ -1,13 +1,12 @@
 POST http://localhost:3000/api/services
 Content-Type: application/json
 
-{
-  "name": "Alguma festaa",
-  "description": "Festa muito loca",
-  "price": 11920,
-  "image": "https://blog.ebaconline.com.br/blog/wp-content/uploads/2023/11/image6-1.png"
-
-}
+    {
+      "name": "Animador",
+      "description": "Animador de festa",
+      "price": 2200,
+      "image": "https://blog.ebaconline.com.br/blog/wp-content/uploads/2023/11/image6-1.png"
+    }
 
 
 
@@ -27,16 +26,15 @@ DELETE http://localhost:3000/api/services/66bfca8f04785964e0320137
 
 
 ###
-PUT  http://localhost:3000/api/services/66c61732eda61445588d8b8c
+PUT  http://localhost:3000/api/services/66c91652d63b93f74c1b5fcc
 Content-Type: application/json
 
-{
-  "name": "Alguma festa",
-  "description": "Festa muito loca",
-  "price": 11920,
-  "image": "https://blog.ebaconline.com.br/blog/wp-content/uploads/2023/11/image6-1.png"
-
-} 
+ {
+      "name": "Animador",
+      "description": "Animador de festa",
+      "price": 2200,
+      "image": "https://img.freepik.com/fotos-gratis/homem-relaxando-em-casa_23-2150652866.jpg?size=626&ext=jpg&ga=GA1.1.401288578.1722459776&semt=ais_hybrid"
+    }
 
 
 

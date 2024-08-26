@@ -15,7 +15,7 @@
 }
 
 .parties-container .party {
-  max-width: 380px;
+  width: 380px;
   display: flex;
   flex-direction: column;
   gap: 0.8rem;
@@ -24,6 +24,8 @@
 
 .parties-container .party img {
   width: 100%;
+  height: 200px;
+  object-fit: cover;
 }
 
 .parties-container .btn-secondary {

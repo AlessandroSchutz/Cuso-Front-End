@@ -1,4 +1,4 @@
-import partyFecth from "../axios/config";
+import partyFetch from "../axios/config";
 
 import { useState, useEffect } from "react";
 
@@ -12,9 +12,8 @@ const Home = () => {
   // Load Parties
   useEffect(() => {
     const loadParties = async () => {
-      const res = await partyFecth.get("/parties");
+      const res = await partyFetch.get("/parties");
 
-      console.log(res);
       setParties(res.data);
     };
 

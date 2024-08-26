@@ -6,8 +6,11 @@
   margin-bottom: 1rem;
 }
 
-
 #navbar h2 {
   color: #7703fc;
   font-weight: 900;
+}
+
+#navbar ul {
+  align-items: center;
 }
