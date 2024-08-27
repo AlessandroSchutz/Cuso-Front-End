@@ -104,7 +104,9 @@ const partyController = {
         return;
       }
       res.status(200).json({party, msg: "Festa atualizada com sucesso!"})
-    } catch (error) {}
+    } catch (error) {
+      console.log(error);
+    }
   },
 };
 
