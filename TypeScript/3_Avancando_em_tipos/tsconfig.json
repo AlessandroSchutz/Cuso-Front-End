@@ -11,7 +11,7 @@
     // "disableReferencedProjectLoad": true,             /* Reduza o número de projetos carregados automaticamente pelo TypeScript. */
 
     /* Linguagem e Meio Ambiente */
-    "target": "es2016",                                  /* Defina a versão da linguagem JavaScript para o JavaScript emitido e inclua declarações de biblioteca compatíveis. */
+    "target": "es2020",                                  /* Defina a versão da linguagem JavaScript para o JavaScript emitido e inclua declarações de biblioteca compatíveis. */
     // "lib": [],                                        /* Especifique um conjunto de arquivos de declaração de biblioteca empacotados que descrevam o ambiente de tempo de execução de destino. */
     // "jsx": "preserve",                                /* Especifique qual código JSX é gerado. */
     // "experimentalDecorators": true,                   /* Habilite o suporte experimental para decoradores experimentais legados. */

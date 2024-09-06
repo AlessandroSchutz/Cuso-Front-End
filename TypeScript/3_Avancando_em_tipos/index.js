@@ -37,3 +37,83 @@ function passCoordinates(coord) {
 }
 const objCoord = { x: 329, y: 84.2 };
 passCoordinates(objCoord);
+// 8 - Propriedades Opcionais
+function showNumbers(a, b, c) {
+    console.log("A:" + a);
+    console.log("B:" + b);
+    if (c) {
+        console.log("C:" + c);
+    }
+}
+showNumbers(1, 2, 3);
+showNumbers(4, 5);
+// Validando props opcionais
+function advancedGreeting(firstName, lastName) {
+    if (lastName !== undefined) {
+        return `Olá, ${firstName} ${lastName}, tudo bem?`;
+    }
+    return `Olá, ${firstName}, tudo bem?`;
+}
+console.log(advancedGreeting("Alessandro", "Schutz"));
+console.log(advancedGreeting("Pablo"));
+// 10 - Union Types
+function showBalance(balance) {
+    console.log(`O saldo da conta é R$${balance}`);
+}
+showBalance(100);
+showBalance("500");
+const arr2 = [1, "teste", true];
+console.log(arr2);
+// 11 - Avançando em union types
+function showUserRole(role) {
+    if (typeof role === "boolean") {
+        return "Usuário não aprovado!";
+    }
+    return `A função do usuário é: ${role}`;
+}
+console.log(showUserRole(false));
+console.log(showUserRole("Admin"));
+function showId(id) {
+    console.log(`O id é: ${id}`);
+}
+showId(1);
+showId("200");
+showId(123);
+function showCoords(obj) {
+    console.log(`X: ${obj.x},Y: ${obj.y}, Z: ${obj.z}`);
+}
+const coordObj = {
+    x: 10,
+    y: 15,
+    z: 20,
+};
+showCoords(coordObj);
+const somePerson = { name: "José", age: 19 };
+console.log(somePerson);
+// type personType = {
+//   age: string;
+// };
+// 15 - Literal Types
+let test;
+test = "Testando";
+console.log(test);
+function showDirection(direction) {
+    console.log(`A direção é: ${direction}`);
+}
+showDirection("left");
+showDirection("right");
+showDirection("center");
+// 16 - Non-null Assertion Operator
+const p = document.getElementById("some-p");
+console.log(p.innerText);
+//  17 - bigint
+let n;
+n = 1000n;
+console.log(n);
+console.log(typeof n);
+console.log(n + 100n);
+// 18 - symbol
+let symbolA = Symbol("a");
+let symbolB = Symbol("a");
+console.log(symbolA == symbolB);
+console.log(symbolA === symbolB);
