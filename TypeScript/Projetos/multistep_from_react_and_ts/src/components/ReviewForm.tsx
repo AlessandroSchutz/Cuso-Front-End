@@ -5,18 +5,25 @@ import {
   BsFillEmojiFrownFill,
 } from "react-icons/bs";
 
+type ReviewForm = {
+  data: {
+    review: string;
+    comment: string;
+  };
+  updateFieldHandler: (key: string, value: string) => void;
+};
+
 import "./ReviewForm.css";
 
-const ReviewForm = ({ data, updateFieldHandler }) => {
-  console.log(data.review);
+const ReviewForm = ({ data, updateFieldHandler }: ReviewForm) => {
   return (
     <div className="review-form">
       <div className="form-control score-container">
         <label className="radio-container">
           <input
             type="radio"
-            value="unsatisfied"
             name="review"
+            value="unsatisfied"
             required
             checked={data.review === "unsatisfied"}
             onChange={(e) => updateFieldHandler("review", e.target.value)}
@@ -27,8 +34,8 @@ const ReviewForm = ({ data, updateFieldHandler }) => {
         <label className="radio-container">
           <input
             type="radio"
-            value="neutral"
             name="review"
+            value="neutral"
             required
             checked={data.review === "neutral"}
             onChange={(e) => updateFieldHandler("review", e.target.value)}
@@ -39,8 +46,8 @@ const ReviewForm = ({ data, updateFieldHandler }) => {
         <label className="radio-container">
           <input
             type="radio"
-            value="satisfied"
             name="review"
+            value="satisfied"
             required
             checked={data.review === "satisfied"}
             onChange={(e) => updateFieldHandler("review", e.target.value)}
@@ -51,8 +58,8 @@ const ReviewForm = ({ data, updateFieldHandler }) => {
         <label className="radio-container">
           <input
             type="radio"
-            value="very_satisfied"
             name="review"
+            value="very_satisfied"
             required
             checked={data.review === "very_satisfied"}
             onChange={(e) => updateFieldHandler("review", e.target.value)}
